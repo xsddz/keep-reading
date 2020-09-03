@@ -1,0 +1,214 @@
+digraph wdqbs {
+    label="——《我的前半生【全本】》 爱新觉罗 · 溥仪 ——"
+    labelloc=t
+    style=invis
+    nodesep=.5
+    ranksep=.5
+    compound=true
+    node [fontname="Monaco",fontsize=15,fontcolor=black,style=filled,fillcolor="grey",shape=egg]
+    edge [fontname="Monaco",fontsize=15,color="#50616d",fontcolor="#50616d",weight=3,decorate=true]
+
+    subgraph cluster07 {
+        rank=same
+
+        "旻宁" [label="旻宁 (mín níng)\n(道光皇帝)\n",fillcolor="#e3b82a"]
+    }
+
+    "旻宁" -> "奕詝" [label="第四子",color="#e3b82a",fontcolor="#e3b82a"]
+    "旻宁" -> "奕訢" [label="第六子"]
+    "旻宁" -> "奕譞" [label="第七子"]
+    "旻宁" -> "奕诒" [label="第八子"]
+
+    subgraph cluster08 {
+        rank=same
+
+        subgraph cluster0804 {
+            label=""
+            style=filled
+            color="#e3b82a"
+
+            "奕詝" [label="奕詝 (yì zhǔ)\n(咸丰皇帝)\n",fillcolor="#e3b82a"]
+            "慈禧太后" [label="慈禧太后\n(西太后，原是宫女)\n",fillcolor="#bf242a"]
+            "慈安太后" [label="慈安太后\n(东太后，钮祜禄氏)\n"]
+        }
+        "奕訢" [label="奕訢 (yì xī)\n(恭亲王)\n"]
+        subgraph cluster0807 {
+            label=""
+            style=filled
+            color="lightgrey"
+
+            "奕譞" [label="奕譞 (yì xuān)\n(第一代醇（贤）亲王)\n"]
+            "第一位祖母" [label="第一位祖母\n(叶赫那拉氏)\n"]
+            "亲祖母刘佳氏" [label="亲祖母\n(刘佳氏)\n"]
+        }
+        "奕诒" [label="奕诒 (yì yí)\n(諥郡王)\n"]
+
+        "奕劻" [label="奕劻 (yì kuāng)\n(庆亲王)\n"]
+        "奕谟" [label="奕谟 (yì mó)\n(贝子)\n"]
+        "奕誌" [label="奕誌 (yì zhì)\n(敏郡王)\n"]
+    }
+
+    "奕詝" -> "载淳" [label="长子",color="#e3b82a",fontcolor="#e3b82a"]
+    "奕譞" -> "载湉" [label="第二子"]
+    "奕譞" -> "载沣" [label="第五子"]
+    "奕譞" -> "载洵" [label="第六子"]
+    "奕譞" -> "载涛" [label="第七子"]
+
+    "奕劻" -> "载振" [label="儿子"]
+
+    subgraph cluster09 {
+        rank=same
+
+        subgraph cluster0901 {
+            label=""
+            style=filled
+            color="#e3b82a"
+
+            "载淳" [label="载淳 (zǎi chún)\n(祺祥、同治皇帝)\n",fillcolor="#e3b82a"]
+            "庄和太妃" [label="庄和太妃\n(珣妃)\n"]
+            "敬懿太妃" [label="敬懿太妃\n(瑜妃)\n"]
+            "荣惠太妃" [label="荣惠太妃\n(瑨妃)\n"]
+        }
+        subgraph cluster0902 {
+            label=""
+            style=filled
+            color="#e3b82a"
+
+            "载湉" [label="载湉 (zǎi tián)\n(光绪皇帝)\n",fillcolor="#e3b82a"]
+            "隆裕太后" [label="隆裕太后"]
+            "端康太妃" [label="端康太妃\n(瑾妃)\n"]
+        }
+        "载沣" [label="载沣 (zǎi fēng)\n(第二代醇亲王)\n"]
+        "载洵" [label="载洵 (zǎi xún)\n"]
+        "载涛" [label="载涛 (zǎi tāo)\n"]
+
+        "载振" [label="载振 (zǎi zhèn)\n"]
+    }
+
+    "载沣" -> "溥仪" [label="长子"]
+    "载沣" -> "溥杰" [label="第二子"]
+    "载涛" -> "溥佳" [label="儿子"]
+
+    subgraph cluster10 {
+        rank=same
+
+        subgraph cluster1001 {
+            label=""
+            style=filled
+            color="#e3b82a"
+
+            "溥仪" [label="溥仪 (pǔ yí)\n(宣统皇帝)\n(清朝第十代，末代皇帝)\n",fillcolor="#e3b82a"]
+            "婉荣" [label="婉荣\n(字慕鸿，皇后)\n"]
+            "文秀" [label="文秀\n(又名惠心，淑妃)\n"]
+        }
+        "溥杰" [label="溥杰 (pǔ jié)\n(溥仪幼时伴读)\n"]
+
+        "溥佳" [label="溥佳\n(溥仪幼时伴读英文)\n"]
+        "溥伦" [label="溥伦\n"]
+    }
+
+    "溥伦" -> "毓崇" [label="儿子"]
+
+    subgraph cluster11 {
+        rank=same
+
+        "毓崇" [label="毓崇\n(溥仪幼时伴读汉文)\n"]
+    }
+
+    # 后宫那些事
+    "奕詝" -> "慈安太后" [label="皇后",color="#50616d",fontcolor="#50616d",constraint=false,weight=0,minlen=0.7]
+    "奕詝" -> "慈禧太后" [label="贵妃",color="#50616d",fontcolor="#50616d",constraint=false,weight=0,minlen=0.7]
+    "慈禧太后" -> "载淳" [label="儿子",color="grey",fontcolor="grey",weight=0]
+    "奕譞" -> "第一位祖母" [label="嫡福晋",color="#50616d",fontcolor="#50616d",constraint=false,weight=0,minlen=0.7]
+    "奕譞" -> "亲祖母刘佳氏" [label="福晋",color="#50616d",fontcolor="#50616d",constraint=false,weight=0,minlen=0.7]
+    "第一位祖母" -> "载湉" [label="儿子",color="grey",fontcolor="grey",weight=0]
+    "亲祖母刘佳氏" -> {"载沣","载洵","载涛"} [label="儿子",fontcolor="grey",color="grey",weight=0]
+    "慈禧太后" -> "第一位祖母" [label="妹妹",color="#16a951",fontcolor="#16a951",style=dotted,constraint=false,weight=0]
+    "载湉" -> "隆裕太后" [label="皇后",color="#50616d",fontcolor="#50616d",constraint=false,weight=0,minlen=0.7]
+    "慈禧太后" -> "隆裕太后" [label="侄女",color="#16a951",fontcolor="#16a951",style=dotted,weight=0]
+
+    # 慈禧干政
+    "载淳" -> "端康太妃" [color="#bf242a",lhead=cluster0902,style=dotted,constraint=false,weight=0]
+    "载湉" -> "溥仪" [color="#bf242a",ltail=cluster0902,style=dotted,constraint=false]
+
+    # 溥仪
+    // "溥仪" -> {"溥杰","溥佳"} [dir=none,style=dotted,constraint=false,weight=0,minlen=0.7]
+    // "溥仪" -> "毓崇" [dir=none,style=dotted]
+    "溥仪" -> "荣禄" [label="外祖父"]
+    "溥仪" -> "王焦氏" [label="乳母"]
+    {"王焦氏" [label="王焦氏\n(嬷嬷)\n"]}
+    "溥仪" -> "张谦和" [lhead=cluster_taijian]
+    subgraph cluster_taijian {
+        label="太监";style="";color="lightgrey";
+        "张谦和" -> "阮进寿" [dir=none,style=dotted]
+        "张谦和" [label="张谦和\n(大总管)\n"]
+        "阮进寿" [label="阮进寿\n(二总管)\n"]
+    }
+    "溥仪" -> "祁继忠" [lhead=cluster_suishi]
+    "婉荣" -> "祁继忠" [label="情人",color="#16a951",fontcolor="#16a951",style=dotted]
+    subgraph cluster_suishi {
+        label="天津时代随侍";style="";color="lightgrey";
+        "祁继忠"
+    }
+    "溥仪" -> "胡适" [color=none]
+    "溥仪" -> "康有为" [color=none]
+    subgraph cluster_kangyw {
+        label="";style=invis;color="lightgrey";
+        "康有为" -> "徐良"
+    }
+    "溥仪" -> "升允" [color=none]
+    "溥仪" -> "陆润庠" [lhead=cluster_teacher]
+    subgraph cluster_teacher {
+        label="老师";style="";color="lightgrey";
+        "陆润庠" -> "伊克坦" -> "陈宝琛" -> "徐坊" -> "朱益藩" -> "梁鼎芬" -> "庄士敦" [dir=none,style=dotted]
+    }
+    "溥仪" -> "世续" [lhead=cluster_neiwufu]
+    subgraph cluster_neiwufu {
+        label="内务府";style="";color="lightgrey";
+        "世续" -> "绍英" -> "耆龄" -> "增崇" -> "继禄" -> "荣源" -> "金梁" [dir=none,style=dotted]
+    }
+    "溥仪" -> "郑孝胥" [lhead=cluster_gugong]
+    subgraph cluster_gugong {
+        label="股肱之臣\n(南书房行走、懋勤殿行走)\n";style="";color="lightgrey";
+        "郑孝胥" -> "罗振玉" -> "景永昶" -> "温肃" -> "柯邵忞" -> "杨锺羲" -> "朱汝珍" -> "王国维" -> "商衍瀛" [dir=none,style=dotted]
+        "郑孝胥" -> "郑垂" [label="儿子",constraint=false,weight=0,minlen=0.7]
+    }
+    "溥仪" -> "袁世凯" [color=none,lhead=cluster_beiyang]
+    subgraph cluster_beiyang {
+        label="北洋军阀";style="";color="lightgrey";
+
+        "袁世凯" [label="袁世凯\n(83天皇帝)\n",fillcolor="#bf242a"]
+        
+        "袁世凯" -> "张勋" [lhead=cluster_bianzijun]
+        subgraph cluster_bianzijun {
+            label="辫子军";style="";color="grey";
+            "张勋" -> {"胡嗣瑗","梁敦彦"}
+        }
+        
+        "袁世凯" -> {"黎元洪","徐世昌","王士珍","王占元","段祺瑞","冯国璋","张作霖"}
+        "黎元洪" -> "冯国璋" [dir=none,lhead=cluster_beiyang_zhi,style=dotted,constraint=false,weight=0]
+        "徐世昌" -> "段祺瑞" [dir=none,lhead=cluster_beiyang_wan,style=dotted,constraint=false,weight=0]
+        subgraph cluster_beiyang_feng {
+            label="奉系";style="";color="grey";
+            "张作霖" -> {"张海鹏","冯麟阁","汤玉麟","张景惠","张宗昌"}
+            "张作霖" -> "张学良" [label="儿子",constraint=false,weight=0,minlen=0.7]
+            "张宗昌" -> "毕庶澄"
+        }
+        subgraph cluster_beiyang_zhi {
+            label="直系";style="";color="grey";
+            "冯国璋" -> {"曹锟","吴佩孚"}
+            "吴佩孚" -> "冯玉祥" -> "鹿锺麟"
+        }
+        subgraph cluster_beiyang_wan {
+            label="皖系";style="";color="grey";
+            "段祺瑞";
+        }
+        "王占元" -> "孙传芳"
+    }
+    "溥仪" -> "蒋介石" [color=none,lhead=cluster_guomingzhenfu]
+    "张宗昌" -> "孙殿英" [style=dotted,constraint=false,weight=0]
+    subgraph cluster_guomingzhenfu {
+        label="国民政府\n";style="";color="lightgrey";
+        "蒋介石" -> {"阎锡山","孙殿英"}
+    }
+}

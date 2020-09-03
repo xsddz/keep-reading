@@ -1,0 +1,311 @@
+digraph wlswn {
+    label="——《万历十五年》——"
+    labelloc=t
+    style=invis
+    nodesep=.5
+    ranksep=.5
+    compound=true
+    node [fontname="Monaco",fontsize=15,fontcolor=black,style=filled,fillcolor="grey",shape=egg]
+    edge [fontname="Monaco",fontsize=15,color="#50616d",fontcolor="#50616d",weight=3,decorate=true]
+    
+    
+    subgraph cluster_story {
+        label="—时间线—";style="";color="lightgrey";
+
+        {
+            node [style="",fillcolor="",shape=point, fontsize=16];
+            "past"; "future";
+
+            node [style="",fillcolor="",shape=plaintext, fontsize=16];
+
+            "past" -> 
+                "1505" -> 
+                "1512" -> 
+                "1517" -> 
+                "1518年秋" -> 
+                "1519年春" -> 
+                "1519年秋" -> 
+                "1520年底" -> 
+                "1521年初" -> 
+                "1558" -> 
+                "1565年\n阳历11月" -> 
+                "1567年初" -> 
+                "1570年春" -> 
+                "1572" -> 
+                    "1572年夏" -> 
+                "1577年秋" -> 
+                "1578年\n4月中旬\n至\n7月中旬" -> 
+                "1580" -> 
+                "1581年冬" -> 
+                "1582" -> 
+                    "1582年\n阳历三月" -> 
+                    "1582年冬\n至\n1583年春\n的几个月间" -> 
+                "1583" ->
+                "1584" -> 
+                    "1584年\n阳历五月" -> 
+                    "1584年\n阳历九月" -> 
+                "1585" -> 
+                "1586年初" -> 
+                "1587" -> 
+                    "1587年\n3月2日" -> 
+                    "1587年\n11月13日" -> 
+                "1588" -> 
+                    "1588年\n1月17日" -> 
+                "1590" -> 
+                    "1591年春" -> 
+                    "1591年\n阳历九月" -> 
+                    "1591年\n阳历十月" -> 
+            "future"
+
+            "中国" -> 
+                "正德继位\n是年不满14岁" -> 
+                "江彬通过皇帝面试\n受到宠信" -> 
+                "鞑靼屡屡犯边\n皇帝御驾亲征\n用宦官取代出关御史\n继而同样不让文官出关\n前后四个月\n百官与皇帝几乎失联\n待得胜回朝\n赏百官绸缎\n令连夜赶制接驾朝服" -> 
+                "不理对大学士们抗议\n再次北方边区巡视\n征途中封自己为\n镇国公、太师" -> 
+                "鞑靼避战，无功而返" -> 
+                "南下巡视游玩\n一次捕鱼活动意外落水\n使得圣躬不豫" -> 
+                "回到北京" -> 
+                "正德皇帝病死豹房\n作为皇室旁支子孙\n万历的祖父继位\n是为嘉靖皇帝" -> 
+                "海瑞升任浙江淳安知县\n是年45岁" -> 
+                "海瑞时任户部主事\n上奏疏怼皇帝" -> 
+                "隆庆皇帝继位" -> 
+                "受到弹劾的海瑞\n被迫辞职归乡" -> 
+                "万历皇帝继位" -> 
+                "高拱被褫去官职" -> 
+                "张居正父亲去世" -> 
+                "参加完\n皇帝大婚典礼后\n张居正回籍葬父" -> 
+                "一次疯狂宴会后\n帝位险些被废" -> 
+                "看上的宫女\n次年7月被封恭妃\n8月生子名常洛" -> 
+                "张居正去世\n张四维任内阁首辅" -> 
+                "一日娶九嫔" -> 
+                "清算张居正运动\n冯保被发配南京守陵" -> 
+                "郑氏由淑嫔升德妃\n张四维离职丁忧\n申时行任内阁首辅" -> 
+                "郑氏由德妃进为贵妃" ->
+                "张居正被万历抄家" -> 
+                "张居正被正式定罪" -> 
+                "海瑞被重新启用\n任职南京右佥都御史" -> 
+                "常洵出生\n郑氏被册皇贵妃" -> 
+                "(明)万历十五年\n皇帝24岁" -> 
+                "举行午朝大典\n系讹传"-> 
+                "海瑞去世" -> 
+                "戚继光去世" -> 
+                "以册立太子事宜\n京官集体施压内阁\n内阁四大学士以辞呈方式\n和皇帝达成一年之期约定" -> 
+                "申时行辞谢皇帝的\n太师、伯爵等恩赐" -> 
+                "李琯参劾首辅" -> 
+                "工部一官员奏请皇帝\n批准立储大典预算\n皇帝以违反约定为由\n延后立储\n许国等联名奏请皇帝收回\n申时行私贴皇帝解释不知情\n许国截获回帖公之于众\n申时行再遭弹劾\n最后被迫离职" [style=dotted,dir=none] 
+            
+            "西欧" -> 
+                "西班牙征英" [style=dotted,dir=none]
+        }
+
+        {rank=same; "past"; "中国"; "西欧";}
+        {rank=same; "1505"; "正德继位\n是年不满14岁";}
+        {rank=same; "1512"; "江彬通过皇帝面试\n受到宠信";}
+        {rank=same; "1517"; "鞑靼屡屡犯边\n皇帝御驾亲征\n用宦官取代出关御史\n继而同样不让文官出关\n前后四个月\n百官与皇帝几乎失联\n待得胜回朝\n赏百官绸缎\n令连夜赶制接驾朝服";}
+        {rank=same; "1518年秋"; "不理对大学士们抗议\n再次北方边区巡视\n征途中封自己为\n镇国公、太师";}
+        {rank=same; "1519年春"; "鞑靼避战，无功而返";}
+        {rank=same; "1519年秋"; "南下巡视游玩\n一次捕鱼活动意外落水\n使得圣躬不豫";}
+        {rank=same; "1520年底"; "回到北京";}
+        {rank=same; "1521年初"; "正德皇帝病死豹房\n作为皇室旁支子孙\n万历的祖父继位\n是为嘉靖皇帝";}
+        {rank=same; "1558"; "海瑞升任浙江淳安知县\n是年45岁";}
+        {rank=same; "1565年\n阳历11月"; "海瑞时任户部主事\n上奏疏怼皇帝";}
+        {rank=same; "1567年初"; "隆庆皇帝继位";}
+        {rank=same; "1570年春"; "受到弹劾的海瑞\n被迫辞职归乡";}
+        {rank=same; "1572"; "万历皇帝继位";}
+        {rank=same; "1572年夏"; "高拱被褫去官职";}
+        {rank=same; "1577年秋"; "张居正父亲去世";}
+        {rank=same; "1578年\n4月中旬\n至\n7月中旬"; "参加完\n皇帝大婚典礼后\n张居正回籍葬父";}
+        {rank=same; "1580"; "一次疯狂宴会后\n帝位险些被废";}
+        {rank=same; "1581年冬"; "看上的宫女\n次年7月被封恭妃\n8月生子名常洛";}
+        {rank=same; "1582"; "张居正去世\n张四维任内阁首辅";}
+        {rank=same; "1582年\n阳历三月"; "一日娶九嫔"}
+        {rank=same; "1582年冬\n至\n1583年春\n的几个月间"; "清算张居正运动\n冯保被发配南京守陵";}
+        {rank=same; "1583"; "郑氏由淑嫔升德妃\n张四维离职丁忧\n申时行任内阁首辅";}
+        {rank=same; "1584"; "郑氏由德妃进为贵妃";}
+        {rank=same; "1584年\n阳历五月"; "张居正被万历抄家";}
+        {rank=same; "1584年\n阳历九月"; "张居正被正式定罪";}
+        {rank=same; "1585"; "海瑞被重新启用\n任职南京右佥都御史";}
+        {rank=same; "1586年初"; "常洵出生\n郑氏被册皇贵妃";}
+        {rank=same; "1587"; "(明)万历十五年\n皇帝24岁";}
+        {rank=same; "1587年\n3月2日"; "举行午朝大典\n系讹传";}
+        {rank=same; "1587年\n11月13日"; "海瑞去世";}
+        {rank=same; "1588年\n1月17日"; "戚继光去世";}
+        {rank=same; "1588"; "西班牙征英";}
+        {rank=same; "1590"; "以册立太子事宜\n京官集体施压内阁\n内阁四大学士以辞呈方式\n和皇帝达成一年之期约定";}
+        {rank=same; "1591年春"; "申时行辞谢皇帝的\n太师、伯爵等恩赐";}
+        {rank=same; "1591年\n阳历九月"; "李琯参劾首辅";}
+        {rank=same; "1591年\n阳历十月"; "工部一官员奏请皇帝\n批准立储大典预算\n皇帝以违反约定为由\n延后立储\n许国等联名奏请皇帝收回\n申时行私贴皇帝解释不知情\n许国截获回帖公之于众\n申时行再遭弹劾\n最后被迫离职";}
+    }
+
+
+    subgraph cluster_people {
+        label="—人物线—";style="";color="lightgrey";
+
+        subgraph cluster1000 {
+            label="";style=filled;color="#e3b82a";
+
+            "正德皇帝" [label="\n朱厚照\n(正德皇帝)\n(第十代)",fillcolor="#e3b82a"]
+        }
+
+        "正德皇帝" -> "嘉靖皇帝" [label="堂弟",color="#bf242a",lhead=cluster1100,style=dotted,constraint=false,weight=0]
+        "正德皇帝" -> "隆庆皇帝" [color=none]
+
+        subgraph cluster1100 {
+            label="";style=filled;color="#e3b82a";
+
+            "嘉靖皇帝" [label="\n朱厚熜(zǒng)\n(嘉靖皇帝)\n(第十一代)",fillcolor="#e3b82a"]
+        }
+        
+        "嘉靖皇帝" -> "隆庆皇帝" [label="儿子",color="#e3b82a",fontcolor="#e3b82a"]
+
+        subgraph cluster1200 {
+            label="";style=filled;color="#e3b82a";
+
+            "隆庆皇帝" [label="\n朱载坖(jì)\n(隆庆皇帝)\n(第十二代)",fillcolor="#e3b82a"]
+            "慈圣皇太后" [label="\n李氏\n(慈圣皇太后)"]
+            "仁圣皇太后" [label="\n陈氏\n(仁圣皇太后)"]
+
+            "隆庆皇帝" -> "慈圣皇太后" [label="皇贵妃",color="#50616d",fontcolor="#50616d",constraint=false,weight=0,minlen=0.7]
+            // "隆庆皇帝" -> "仁圣皇太后" [label="皇后",color="#50616d",fontcolor="#50616d",constraint=false,weight=0,minlen=0.7]
+        }
+
+        "隆庆皇帝" -> "万历皇帝" [label="第三子",color="#e3b82a",fontcolor="#e3b82a"]
+        "慈圣皇太后" -> "万历皇帝" [label="儿子",color="grey",fontcolor="grey"]
+
+        "慈圣皇太后" -> "恭妃王氏" [label="宫女",color="grey",fontcolor="grey"]
+        "万历皇帝" -> "正德皇帝" [label="叔祖",color="grey",fontcolor="grey"]
+
+        subgraph cluster1300 {
+            label="";style=filled;color="#e3b82a";
+
+            "万历皇帝" [label="\n朱翊钧(yì jūn)\n(万历皇帝)\n(第十三代)",fillcolor="#e3b82a"]
+            "恭妃王氏" [label="\n恭妃王氏\n(孝靖皇后)"]
+            "德妃郑氏" [label="\n德妃郑氏\n(皇贵妃)"]
+            "孝端皇后王氏" [label="\n皇后王氏\n(孝端皇后)"]
+
+            "万历皇帝" -> "恭妃王氏" [label="",color="#50616d",fontcolor="#50616d",constraint=false,weight=0,minlen=0.7]
+            "万历皇帝" -> "德妃郑氏" [label="皇贵妃",color="#50616d",fontcolor="#50616d",constraint=false,weight=0,minlen=0.7]
+        }
+
+        "万历皇帝" -> "朱常洛" [label="皇长子"]
+        "恭妃王氏" -> "朱常洛" [label="儿子",color="grey",fontcolor="grey"]
+        
+        "万历皇帝" -> "朱常洵" [label="皇三子"]
+        "德妃郑氏" -> "朱常洵" [label="儿子",color="grey",fontcolor="grey"]
+
+        // "万历皇帝" -> "朱常浩" [label="皇五子"]
+
+        {
+            subgraph cluster1401 {
+                label="";style=filled;color="lightgrey";
+
+                "朱常洛" [label="\n朱常洛"]
+            }
+            subgraph cluster1403 {
+                label="";style=filled;color="lightgrey";
+
+                "朱常洵" [label="\n朱常洵"]
+            }
+            // subgraph cluster1405 {
+            //     label="";style=filled;color="lightgrey";
+
+            //     "朱常浩" [label="\n朱常浩"]
+            // }
+        }
+
+        "慈圣皇太后" -> "李伟" [label="父亲",color="grey",fontcolor="grey",constraint=false,weight=0]
+        "万历皇帝" -> "李伟" [label="外祖父",color="grey",fontcolor="grey",constraint=false,weight=0]
+
+        "万历皇帝" -> "张居正" [label="老师",color="grey",fontcolor="grey",weight=0]
+        "万历皇帝" -> "冯保" [label="大伴",color="grey",fontcolor="grey",weight=0]
+
+        {
+            subgraph cluster1301 {
+                label="";style="";color="lightgrey";
+                
+                // 首辅
+                "严嵩" [label="\n严嵩\n(内阁首辅)"]
+                "徐阶" [label="\n徐阶\n(内阁首辅)"]
+                "高拱" [label="\n高拱\n(内阁首辅)"]
+                "张居正" [label="\n张居正\n(内阁首辅)"]
+                "张四维" [label="\n张四维\n(内阁首辅)"]
+                "申时行" [label="\n申时行\n(内阁首辅)"]
+                "王锡爵" [label="\n王锡爵\n(内阁首辅)"]
+                
+                // 
+                "胡宗宪" [label="\n胡宗宪\n"]
+                "鄢懋卿" [label="\n鄢懋卿"]
+                "谭纶" [label="\n谭纶"]
+                "海瑞" [label="\n海瑞"]
+                "戚继光" [label="\n戚继光"]
+                "俞大猷" [label="\n俞大猷"]
+                "许国" [label="\n许国\n(二辅)"]
+                "高启愚" [label="\n高启愚\n(皇帝经筵讲官)"]
+                "徐学谟" [label="\n徐学谟\n(礼部尚书)"]
+                "申用嘉" [label="\n申用嘉"]
+
+                // 
+                "邹元标" [label="\n邹元标"]
+
+                // 
+                "耿定向" [label="\n耿定向"]
+                "周思敬" [label="\n周思敬"]
+                "李贽" [label="\n李贽"]
+                
+                // 严党
+                "严嵩" -> "徐阶" [color=blue,minlen=0.7]
+                "严嵩" -> "胡宗宪" [style=dotted]
+                "严嵩" -> "鄢懋卿" [style=dotted]
+
+                // 徐高张
+                "徐阶" -> "高拱" [color=blue,minlen=0.7]
+                "高拱" -> "张居正" [color=blue,minlen=0.7]
+                "张居正" -> "张四维" [label="提拔",color=blue]
+                "张居正" -> "申时行" [label="荐举入阁",style=dotted]
+                "张居正" -> "徐学谟" [style=dotted,dir=none]
+                "张居正" -> "邹元标" [label="曾弹劾",style=dotted,dir="back"]
+
+                // 申时行
+                "张四维" -> "申时行" [color=blue,minlen=0.7]
+                "申时行" -> "王锡爵" [color=blue,minlen=0.7]
+                "申时行" -> "许国" [style=dotted,dir=none,weight=0,minlen=0.7]
+                "申时行" -> "高启愚" [label="提拔",style=dotted,weight=0,minlen=0.7]
+                "申时行" -> "申用嘉" [label="儿子",style=dotted]
+                "徐学谟" -> "申用嘉" [label="岳父",style=dotted,dir="back"]
+
+                // 海瑞
+                "徐阶","高拱" -> "谭纶" [color=none,style=dotted,dir=none]
+                "张居正" -> "谭纶" [style=dotted,dir=none]
+                "谭纶" -> "海瑞" [label="荐举",style=dotted]
+
+                // 戚继光
+                "张居正" -> "戚继光" [style=dotted,dir=none]
+                "谭纶" -> "戚继光" [style=dotted,dir=none,minlen=0.7]
+                "严嵩" -> "戚继光" [color=none,style=dotted,dir=none]
+                "胡宗宪" -> "戚继光" [style=dotted,minlen=0.7]
+                "胡宗宪" -> "俞大猷" [style=dotted]
+                "戚继光" -> "俞大猷" [label="朋友",style=dotted,dir=none]
+
+                // 李贽
+                "张居正" -> "耿定向","周思敬" [label="亲信",style=dotted]
+                "耿定向","周思敬" -> "李贽" [style=dotted,dir=none]
+            }
+
+            subgraph cluster1302 {
+                label="";style="";color="lightgrey";
+
+                "冯保" [label="\n冯保\n(司礼监太监)"]
+                "孙海" [label="\n孙海\n(宦官)"]
+
+                "冯保" -> "孙海" [color=none,minlen=0.7]
+            }
+
+            subgraph cluster1303 {
+                label="";style="";color="lightgrey";
+
+                "李伟" [label="\n李伟\n(武清伯)"]
+            }
+        }
+    }
+
+}
